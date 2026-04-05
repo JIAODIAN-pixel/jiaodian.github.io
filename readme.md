@@ -1,2 +1,2 @@
-#JIAODIAN
-This is my first website.
+这里会记录我想要记录的东西。
+在此输入状态讯息
