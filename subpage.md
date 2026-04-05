@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "一个子网页"
 permalink: /subpage
 ---
