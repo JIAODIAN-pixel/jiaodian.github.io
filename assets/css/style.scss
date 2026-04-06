@@ -53,6 +53,7 @@
 
 /* 二级目录 */
 .nav-sub {
+  display: none;
   flex-direction: column;
   gap: 3px;
   margin-bottom: 8px;
@@ -62,11 +63,6 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.35s cubic-bezier(0.33, 1, 0.68, 1);
-}
-
-
-.nav-sub.show {
-  max-height: 200px;
 }
 
 .nav-toggle:checked ~ .nav-sub {
