@@ -23,10 +23,6 @@
   margin-bottom: 8px;
 }
 
-.nav-toggle {
-  display: none;
-}
-
 /* 一级目录（学习、娱乐、生活） */
 .nav-main {
   display: block;
@@ -52,7 +48,7 @@
 
 /* 二级目录 */
 .nav-sub {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 3px;
   margin-bottom: 8px;
