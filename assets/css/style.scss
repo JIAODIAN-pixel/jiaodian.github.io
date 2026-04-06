@@ -53,7 +53,16 @@
   gap: 3px;
   margin-bottom: 8px;
   padding-left: 20px;
-  transition: all 0.3s ease;
+  
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.25s ease;
+  display: none;  /* 初始隐藏 */
+}
+
+.nav-sub.show {
+  transform: scaleY(1);
+  display: flex;  /* 展开时显示 */
 }
 
 .nav-toggle:checked ~ .nav-sub {
