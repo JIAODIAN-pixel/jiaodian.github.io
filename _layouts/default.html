@@ -65,6 +65,27 @@
               </div>
             </div>
           </aside>
+
+          <script>
+            // 获取所有一级目录元素
+            var toggles = document.querySelectorAll('.nav-main');
+            
+            // 为每个一级目录绑定点击事件
+            toggles.forEach(function(toggle) {
+              toggle.addEventListener('click', function() {
+                // 找到对应的二级目录（同级元素中的 .nav-sub）
+                var subMenu = this.nextElementSibling;
+                
+                // 切换显示/隐藏
+                if (subMenu.style.display === 'none' || subMenu.style.display === '') {
+                  subMenu.style.display = 'flex';
+                } else {
+                  subMenu.style.display = 'none';
+                }
+              });
+            });
+          </script>
+
           
           <!-- 右侧：页面主要内容 -->
           <div class="page-content">
