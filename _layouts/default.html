@@ -18,6 +18,40 @@
   </head>
   <body>
     <div class="wrapper">
+       <nav class="sidebar">
+        <h2>📚 目录</h2>
+        
+        <!-- 学习栏目 -->
+        <div class="nav-category">
+          <div class="category-title">📖 学习</div>
+          <ul class="nav-sub">
+            <li><a href="/study/1">学习 1</a></li>
+            <li><a href="/study/2">学习 2</a></li>
+            <li><a href="/study/3">学习 3</a></li>
+          </ul>
+        </div>
+        
+        <!-- 娱乐栏目 -->
+        <div class="nav-category">
+          <div class="category-title">🎬 娱乐</div>
+          <ul class="nav-sub">
+            <li><a href="/entertainment/1">娱乐 1</a></li>
+            <li><a href="/entertainment/2">娱乐 2</a></li>
+            <li><a href="/entertainment/3">娱乐 3</a></li>
+          </ul>
+        </div>
+        
+        <!-- 生活栏目 -->
+        <div class="nav-category">
+          <div class="category-title">🌸 生活</div>
+          <ul class="nav-sub">
+            <li><a href="/life/1">生活 1</a></li>
+            <li><a href="/life/2">生活 2</a></li>
+            <li><a href="/life/3">生活 3</a></li>
+          </ul>
+        </div>
+      </nav>
+      
       <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
         <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
         {% if site.description or site.github.project_tagline %}
