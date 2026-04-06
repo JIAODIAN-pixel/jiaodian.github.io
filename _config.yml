@@ -3,3 +3,4 @@ description: Modernist is a theme for GitHub Pages.
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-modernist
+baseurl: "/jiaodian.github.io"
