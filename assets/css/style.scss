@@ -48,21 +48,20 @@
 
 /* 二级目录 */
 .nav-sub {
-  display: none;
   flex-direction: column;
   gap: 3px;
   margin-bottom: 8px;
   padding-left: 20px;
   
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: transform 0.25s ease;
-  display: none;  /* 初始隐藏 */
+   /* 滑动动画核心 */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
+
 .nav-sub.show {
-  transform: scaleY(1);
-  display: flex;  /* 展开时显示 */
+  max-height: 200px;
 }
 
 .nav-toggle:checked ~ .nav-sub {
