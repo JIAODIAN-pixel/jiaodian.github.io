@@ -25,7 +25,9 @@
 .nav-item {
   margin-bottom: 8px;
 }
-
+.nav-toggle {
+  display: none !important;
+}
 /* 一级目录（学习、娱乐、生活） */
 .nav-main {
   display: block;
