@@ -26,40 +26,43 @@
           <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
         {% endif %}
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        
-        <!-- ===== 目录放在 header 内部，位于 GitHub 链接下方 ===== -->
-        <div class="nav-category">
-          <div class="category-title">学习</div>
-          <ul class="nav-sub">
-            <li><a href="{{ '/study/1' | relative_url }}">学习 1</a></li>
-            <li><a href="{{ '/study/2' | relative_url }}">学习 2</a></li>
-            <li><a href="{{ '/study/3' | relative_url }}">学习 3</a></li>
-          </ul>
-        </div>
-        
-        <div class="nav-category">
-          <div class="category-title">娱乐</div>
-          <ul class="nav-sub">
-            <li><a href="{{ '/entertainment/1' | relative_url }}">娱乐 1</a></li>
-            <li><a href="{{ '/entertainment/2' | relative_url }}">娱乐 2</a></li>
-            <li><a href="{{ '/entertainment/3' | relative_url }}">娱乐 3</a></li>
-          </ul>
-        </div>
-        
-        <div class="nav-category">
-          <div class="category-title">生活</div>
-          <ul class="nav-sub">
-            <li><a href="{{ '/life/1' | relative_url }}">生活 1</a></li>
-            <li><a href="{{ '/life/2' | relative_url }}">生活 2</a></li>
-            <li><a href="{{ '/life/3' | relative_url }}">生活 3</a></li>
-          </ul>
-        </div>
-        <!-- 目录结束 -->
-        
+        </ul>   
       </header>
-      <section>
-        {{ content }}
+       <section>
+        <div class="content-with-sidebar">
+          <!-- 左侧目录（在白色区域内） -->
+          <aside class="sidebar-nav">
+            <div class="nav-item">
+              <div class="nav-main">学习</div>
+              <div class="nav-sub">
+                <a href="https://jiaodian-pixel.github.io/jiaodian.github.io/study/1">学习 1</a>
+                <a href="https://jiaodian-pixel.github.io/jiaodian.github.io/study/2">学习 2</a>
+                <a href="https://jiaodian-pixel.github.io/jiaodian.github.io/study/3">学习 3</a>
+              </div>
+            </div>
+            <div class="nav-item">
+              <div class="nav-main">娱乐</div>
+              <div class="nav-sub">
+                <a href="https://jiaodian-pixel.github.io/jiaodian.github.io/entertainment/1">娱乐 1</a>
+                <a href="https://jiaodian-pixel.github.io/jiaodian.github.io/entertainment/2">娱乐 2</a>
+                <a href="https://jiaodian-pixel.github.io/jiaodian.github.io/entertainment/3">娱乐 3</a>
+              </div>
+            </div>
+            <div class="nav-item">
+              <div class="nav-main">生活</div>
+              <div class="nav-sub">
+                <a href="https://jiaodian-pixel.github.io/jiaodian.github.io/life/1">生活 1</a>
+                <a href="https://jiaodian-pixel.github.io/jiaodian.github.io/life/2">生活 2</a>
+                <a href="https://jiaodian-pixel.github.io/jiaodian.github.io/life/3">生活 3</a>
+              </div>
+            </div>
+          </aside>
+          
+          <!-- 右侧：页面主要内容 -->
+          <div class="page-content">
+            {{ content }}
+          </div>
+        </div>
       </section>
     </div>
     <footer>
