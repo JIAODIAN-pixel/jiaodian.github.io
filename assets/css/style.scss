@@ -19,29 +19,52 @@
   background: transparent;
 }
 
+.nav-item {
+  margin-bottom: 8px;
+}
+
+.nav-toggle {
+  display: none;
+}
+
 /* 一级目录（学习、娱乐、生活） */
 .nav-main {
+  display: block;
+  font-family: "SimSun", "宋体", "Times New Roman", serif;
   font-size: 1rem;
   font-weight: 600;
   color: #2d6a2d;
   margin-bottom: 4px;
   margin-top: 12px;
+  cursor: pointer;  /* 鼠标变成手型 */
+  user-select: none; /* 防止双击选中文字 */
 }
+
 
 .nav-item:first-child .nav-main {
   margin-top: 0;
 }
+
+.nav-main:hover {
+  color: #1a4d1a;
+}
+
 
 /* 二级目录 */
 .nav-sub {
   display: flex;
   flex-direction: column;
   gap: 3px;
-  margin-bottom: 12px;
-  padding-left: 8px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+}
+
+.nav-toggle:checked ~ .nav-sub {
+  display: flex;
 }
 
 .nav-sub a {
+  font-family: "SimSun", "宋体", "Times New Roman", serif; /* 添加这行来应用宋体 */
   color: #3a7e3a;
   text-decoration: underline;
   text-underline-offset: 3px;
