@@ -50,23 +50,20 @@
   color: #1a4d1a;
 }
 
-
-/* 二级目录 */
+/* 二级目录 - 默认收起 */
 .nav-sub {
-  display: none;
   flex-direction: column;
   gap: 3px;
   margin-bottom: 8px;
   padding-left: 20px;
-  
-   /* 滑动动画核心 */
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.35s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
+/* 展开状态 */
 .nav-toggle:checked ~ .nav-sub {
-  display: flex;
+  max-height: 200px;  /* 设大一点，保证能装下所有二级链接 */
 }
 
 .nav-sub a {
