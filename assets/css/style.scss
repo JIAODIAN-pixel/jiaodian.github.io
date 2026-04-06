@@ -2,6 +2,9 @@
 ---
 @import "{{ site.theme }}";
 
+.wrapper {
+  width: 1050px !important;
+}
 /* 目录样式 - 放在 header 内部 */
 .nav-category {
   margin-top: 20px;
